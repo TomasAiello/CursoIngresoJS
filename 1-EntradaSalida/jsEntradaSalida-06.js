@@ -8,10 +8,10 @@ function sumar()
 	var Numerodos;
 	var Suma;
 
-	Numerouno = document.getElementById("txtIdNumeroUno").value;
-	Numerodos = document.getElementById("txtIdNumeroDos").value;
+	Numerouno = parseInt(document.getElementById("txtIdNumeroUno").value);
+	Numerodos = parseInt(document.getElementById("txtIdNumeroDos").value);
 
-	Suma = parseInt(Numerouno) + parseInt(Numerodos);
+	Suma = Numerouno + Numerodos;
 
 	alert(Suma);
 }
