@@ -8,10 +8,5 @@ function mostrar()
 	{ 
 		alert("niña bonita");
 		
-	} else 
-	{
-	
-	
-	}
-
+	} 
 }

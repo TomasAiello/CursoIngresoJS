@@ -12,7 +12,7 @@ function sumar()
 	Numerouno = document.getElementById("txtIdNumeroUno").value;
 	Numerodos = document.getElementById("txtIdNumeroDos").value;
 
-	Suma = parseInt(Numerouno) + parseInt(Numerodos);
+	Suma = parseFloat(Numerouno) + parseFloat(Numerodos);
 
 	alert("la suma es "+Suma);
 

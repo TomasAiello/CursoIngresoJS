@@ -9,11 +9,7 @@ function mostrar()
 		{ 
 			alert("Usted es mayor de edad");
 			
-		} else 
-		{
-		
-		
-		}
+		} 
 	
 	}
 
