@@ -7,7 +7,7 @@ function mostrar()
 	
 	num = Math.round(Math.random() * (maximo - minimo) + minimo );
 				   
-	if (num>=4)
+	if (num>=4 && num<9)
 	{
 		alert ("SU NOTA ES: " + num + ", APROBO.");
 	}
