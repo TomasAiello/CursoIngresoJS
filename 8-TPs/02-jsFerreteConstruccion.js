@@ -11,13 +11,11 @@ function Rectangulo ()
     
     var rectangulo;
   
-
-
-    var largo= document.getElementById("txtIdLargo").value;
-    var ancho= document.getElementById("txtIdAncho").value;
+    largo= document.getElementById("txtIdLargo").value;
+    ancho= document.getElementById("txtIdAncho").value;
     
     
-    var rectangulo= parseFloat(largo)*parseFloat(ancho);
+    rectangulo= parseFloat(largo)*parseFloat(ancho);
    
   
 
@@ -29,15 +27,29 @@ function Circulo ()
 {
     var circulo;
     var radio; 
-    var radio= document.getElementById("txtIdRadio").value;
-    var circulo = parseFloat(6,28*radio); 
+    radio= document.getElementById("txtIdRadio").value;
+    circulo = parseFloat(6,28*radio); 
 
     alert (circulo*3).toFixed(2);
     
 }
 function Materiales () 
-{
+{   
+    var largo;
+    var ancho;
+    var cemento;
+    var cal;
     var contrapiso;
+   
+
+    largo= parseInt(document.getElementById("txtIdLargo").value);
+    ancho= parseInt(document.getElementById("txtIdAncho").value);
+    
+    cal=largo*ancho*3;
+    cemento=largo*ancho*2;
+
+
+    alert ("Usted necesita: " + cemento  + " bolsas de cemento y " +  cal  + " de cal");
 
 
 }

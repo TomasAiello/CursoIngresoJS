@@ -1,7 +1,12 @@
 function mostrar()
 {
-	var Random;
-	Random=(Math.random(9,99) * 11); 
-	alert(Random.toFixed(2));
+	
+	let maximo =10;
+	let minimo =1;
+	let num;
+	
+	num = Math.round(Math.random() * (maximo - minimo) + minimo );
+				   
+		alert(num);	
 
 }//FIN DE LA FUNCIÓN
