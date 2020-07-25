@@ -9,4 +9,4 @@ function mostrar()
 				   
 		alert(num);	
 
-}//FIN DE LA FUNCIÓN
+}
