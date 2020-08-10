@@ -10,5 +10,76 @@ E.	Si el importe final con descuento suma más de $120  se debe sumar un 10% de 
  */
 function CalcularPrecio () 
 {
+    let preciounidad = 35;
+    let cantidad;
+    let marca;
+    let preciofinal;
+    let ingresosbrutos;
+
+    cantidad = parseInt(document.getElementById("txtIdCantidad").value);
+    marca = document.getElementById("Marca").value;
+    preciofinal = preciounidad * cantidad;
+    ingresosbrutos = preciofinal * 0.1;
+
+    //A
+    if (cantidad >= 6)
+    {
+        // quisiera definir el valor de la variable "descuento" en cada una de las condiciones pero no se puede? 
+        document.getElementById("txtIdprecioDescuento").value = preciofinal - (preciofinal * 0.5);
+        if (preciofinal - (preciofinal * 0.5) >= 120)
+        {
+            document.getElementById("txtIdprecioDescuento").value = preciofinal *0.5 + ingresosbrutos;
+            alert ("Usted pago $" + (preciofinal * 0.5 + ingresosbrutos) + " de IIBB, " + "siendo $" + ingresosbrutos + " el impuesto que se pago");
+        }
+    }
+   
+    //B
+    if (cantidad == 5)
+    {
+        if (marca = "ArgentinaLuz")
+        {
+            document.getElementById("txtIdprecioDescuento").value = preciofinal - (preciofinal * 0.4);
+        }
+        else 
+        {
+            document.getElementById("txtIdprecioDescuento").value = preciofinal - (preciofinal * 0.3);
+        }
+        // no hace falta considerar el impuesto porque, aplicado el descuento, no supera los $120
+    }
+   
+    //C
+    if (cantidad == 4)
+    {
+        if (marca = "ArgentinaLuz" || "FelipeLamparas")
+        {
+            document.getElementById("txtIdprecioDescuento").value = preciofinal - (preciofinal * 0.25);
+        }
+        else 
+        {
+            document.getElementById("txtIdprecioDescuento").value = preciofinal - (preciofinal * 0.20);
+        }
+         // no hace falta considerar el impuesto porque, aplicado el descuento, no supera los $120
+    }
+
+    //D
+    if (cantidad == 3)
+    {   
+        if (marca = "ArgentinaLuz")
+        {
+            document.getElementById("txtIdprecioDescuento").value = preciofinal - (preciofinal * 0.15);
+        }
+        else if (marca = "FelipeLamparas")
+        {
+            document.getElementById("txtIdprecioDescuento").value = preciofinal - (preciofinal * 0.1);
+        }
+        else 
+        {
+            document.getElementById("txtIdprecioDescuento").value = preciofinal - (preciofinal * 0.05);
+        }
+         // no hace falta considerar el impuesto porque, aplicado el descuento, no supera los $120
+    }
+
+
+
  	
 }

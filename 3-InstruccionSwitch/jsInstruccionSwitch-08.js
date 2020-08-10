@@ -10,7 +10,8 @@ function mostrar()
 			alert ("Frio");
 			break;
 		
-		default:
+		case "Mar del plata":
+		case "Cataratas":
 			alert ("Calor");
 			break;
 

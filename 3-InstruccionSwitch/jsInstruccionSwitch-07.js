@@ -5,18 +5,19 @@ function mostrar()
 
 	switch (destino)
 	{
-	
-		
 		case "Mar del plata":
 			alert ("Este");
 			break;
-		
 		case "Cataratas":
 			alert ("Norte");
 			break;
-
-		default:
+		case "Bariloche":
+			alert ("Oeste");
+		case "Ushuaia":
 			alert ("Sur");
+			break;
+		default:
+			alert ("Esta provincia no esta contemplada");
 			break;
 	}
 
